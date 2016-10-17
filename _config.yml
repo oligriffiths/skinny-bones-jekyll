@@ -5,14 +5,7 @@ description: "This is a description of my awesome site."
 logo: # 120x120 px default image used for Twitter summary card
 teaser: # 400x250 px default teaser image used in image archive grid
 locale: en
-url:
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: "/jekyll-now"
-
+url: "/skinny-bones-jekyll"
 feed:
   path: atom.xml
 
