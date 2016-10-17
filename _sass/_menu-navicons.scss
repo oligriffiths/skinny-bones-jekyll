@@ -8,7 +8,7 @@
 @mixin line {
   display: inline-block;
   width: $button-size;
-  height: $button-size/7;
+  height: $button-size/8;
   background: $white;
   transition: $transition;
 }
@@ -16,6 +16,7 @@
 .nav-lines {
   @include line;
   position: relative;
+  top: -4px;
   &:before, &:after {
    @include line;
     position: absolute;
@@ -24,21 +25,10 @@
       transform-origin: $button-size/14 center;
   }
   &:before {
-    top: $button-size/4;
+    top: $button-size/3.5;
   }
   &:after {
-    top: -$button-size/4;
-  }
-}
-
-.lines-button:hover {
-  .nav-lines {
-    &:before {
-      top: $button-size/3.5;
-    }
-    &:after {
-      top: -$button-size/3.5;
-    }
+    top: -$button-size/3.5;
   }
 }
 

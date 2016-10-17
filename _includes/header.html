@@ -1,6 +1,12 @@
 <header id="masthead">
   <div class="inner-wrap">
-    <a href="{{ site.url }}/" class="site-title">{{ site.title }}</a>
+    <a href="{{ site.url }}/" class="site-title">
+      {% if site.logo %}
+          <img class="logo" src="{{ site.url }}/images/{{ site.logo }}" height="{{ site.logo-height }}" />
+      {% else %}
+          {{ site.title }}
+      {% endif %}
+    </a>
     <nav role="navigation" class="menu top-menu">
         {% include navigation.html %}
     </nav>

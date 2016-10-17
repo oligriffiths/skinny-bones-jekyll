@@ -23,7 +23,6 @@
 	@include media($large) {
 		@include span-columns(4);
 	}
-	padding: (.25 * $masthead-height) 0; // fourth the height to center vertically
 	height: $masthead-height;
 	text-decoration: none;
 	color: $black;
@@ -32,6 +31,10 @@
 	@include font-size(20,no);
 	line-height: .5 * $masthead-height; // half the height to center vertically
 	text-transform: uppercase;
+
+	.logo {
+		max-height: $masthead-height;
+	}
 }
 
 
@@ -233,6 +236,7 @@
 	background-attachment: fixed;
 	text-align: center;
 	color: $white;
+	background-color: #333;
 	@include media($large) {
 		background-size: cover;
 	}

@@ -1,6 +1,16 @@
 # Site navigation links
 
-- title:
-  url:
-  excerpt:
+- title: Get Started
+  url: /docs/
+  excerpt: "Get started using Spark"
+  image:
+
+- title: Blog
+  url: /blog/
+  excerpt: "Checkout the Spark blog for updates"
+  image:
+
+- title: About
+  url: /about/
+  excerpt: "Find out more about why Spark exists"
   image:
